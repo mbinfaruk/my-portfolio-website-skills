@@ -361,7 +361,8 @@
     .project-img{
         width: 100%;
         height: 200px;
-        object-fit: cover;
+        /* object-fit: cover; */
+        object-fit: fill;
     }
 
     .project-info{
@@ -475,4 +476,91 @@
         box-shadow: 0 0 25px rgba(0, 136, 255, 0.5);
     }
 
+
+    /* footer */
+    footer{
+        text-align: center;
+        padding: 2rem;
+        background-color: #0a0a0a;
+        position: relative;
+    }
+    .social-links{
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .social-link{
+        color: #ccc;
+        font-size: 1.5rem;
+        transition: all0.3s ease;
+    }
+
+    .social-link:hover{
+        color: var(--neon-blue);
+        transform: translateY(-3px);
+    }
+
+    .copyright{
+        color: #666;
+        font-size: 0.9rem;
+    }
+
+    @keyframes fillBar {
+        from{
+            width: 0%;
+        }
+    }
+
+
+    /* responsive */
+    @media (max-width:992px) {
+        .hero{
+            flex-direction: column;
+            text-align: center;
+            padding-top: 120px;
+        }
+        .hero-content{
+            margin-bottom: 3rem;
+        }
+        .about-content{
+            flex-direction: column;
+        }
+    }
+
+    @media (max-width:768px) {
+        .nav-links{
+            display: none;
+        }
+        .hero h1{
+            font-size: 2.5rem;
+        }
+        .profile-container{
+            width: 300px;
+            height: 300px;
+        }
+        .profile-pic{
+            width: 250px;
+            height: 250px;
+        }
+        .profile-border{
+            width: 270px;
+            height: 270px;
+        }
+    }
+
+    /* scrollbar */
+    ::-webkit-scrollbar{
+        width: 10px;
+    }
+    ::-webkit-scrollbar-track{
+        background: var(--darker-bg);
+    }
+    ::-webkit-scrollbar-thumb{
+        background: var(--neon-purple);
+        border-radius: 5px;
+    }
+    ::-webkit-scrollbar-thumb:hover{
+        background: var(--neon-pink);
+    }
 
