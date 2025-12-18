@@ -477,6 +477,15 @@
     }
 
 
+    #submit-msg{
+        color: #61b752;
+        display: block;
+        justify-items: center;
+        max-width: 600px;
+        margin: -20px auto 0;
+    }
+
+
     /* footer */
     footer{
         text-align: center;
